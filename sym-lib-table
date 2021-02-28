@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name PCA96125)(type Legacy)(uri ${KIPRJMOD}/lib/PCA9615DPJ.lib)(options "")(descr ""))
+  (lib (name VL53L1CX)(type Legacy)(uri ${KIPRJMOD}/lib/VL53L1CX.lib)(options "")(descr ""))
+  (lib (name LTC4316)(type Legacy)(uri ${KIPRJMOD}/lib/LTC4316IMSPBF.lib)(options "")(descr ""))
+)

@@ -1,0 +1,44 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PCA96125:PCA9615DPJ IC?
+U 1 1 603AE4F8
+P 1150 1700
+F 0 "IC?" H 1800 1967 50  0000 C CNN
+F 1 "PCA9615DPJ" H 1800 1876 50  0000 C CNN
+F 2 "SOP50P490X110-10N" H 1150 1700 50  0001 L BNN
+F 3 "" H 1150 1700 50  0001 L BNN
+F 4 "NXP - PCA9615DPJ - BUFFER, DIFFERENTIAL I2C-BUS, TSSOP-10" H 1150 1700 50  0001 L BNN "Description"
+F 5 "https://www.mouser.com/Search/Refine.aspx?Keyword=771-PCA9615DPJ" H 1150 1700 50  0001 L BNN "Mouser_Price-Stock"
+F 6 "PCA9615DPJ" H 1150 1700 50  0001 L BNN "Manufacturer_Part_Number"
+F 7 "NXP" H 1150 1700 50  0001 L BNN "Manufacturer_Name"
+F 8 "1.1mm" H 1150 1700 50  0001 L BNN "Height"
+F 9 "771-PCA9615DPJ" H 1150 1700 50  0001 L BNN "Mouser_Part_Number"
+	1    1150 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L VL53L1CX:VL53L1CXV0FY_1 U?
+U 1 1 603AEE74
+P 1050 2950
+F 0 "U?" H 2050 3337 60  0000 C CNN
+F 1 "VL53L1CXV0FY_1" H 2050 3231 60  0000 C CNN
+F 2 "LGA12_STM" H 2050 3190 60  0001 C CNN
+F 3 "" H 1050 2950 60  0000 C CNN
+	1    1050 2950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
