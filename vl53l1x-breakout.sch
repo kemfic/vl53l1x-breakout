@@ -120,13 +120,13 @@ Connection ~ 3050 2200
 Wire Wire Line
 	3050 2200 3050 2250
 Text GLabel 1500 1000 2    50   Input ~ 0
-SDA+
-Text GLabel 1500 1200 2    50   Input ~ 0
-SDA-
-Text GLabel 1500 1400 2    50   Input ~ 0
-SCL+
-Text GLabel 1500 1600 2    50   Input ~ 0
 SCL-
+Text GLabel 1500 1200 2    50   Input ~ 0
+SCL+
+Text GLabel 1500 1400 2    50   Input ~ 0
+SDA+
+Text GLabel 1500 1600 2    50   Input ~ 0
+SDA-
 Wire Wire Line
 	2000 1800 2000 1600
 Connection ~ 2000 1800
