@@ -893,81 +893,81 @@ Wire Wire Line
 Connection ~ 1550 2300
 Wire Wire Line
 	1550 2300 1550 2550
-Text GLabel 4000 3900 0    50   Input ~ 0
+Text GLabel 3900 3200 0    50   Input ~ 0
 shld
-Text GLabel 4000 2700 0    50   Input ~ 0
+Text GLabel 3900 2000 0    50   Input ~ 0
 SDA+
-Text GLabel 4000 2900 0    50   Input ~ 0
+Text GLabel 3900 2200 0    50   Input ~ 0
 SDA-
-Text GLabel 4000 3100 0    50   Input ~ 0
+Text GLabel 3900 2400 0    50   Input ~ 0
 SCL+
-Text GLabel 4000 3300 0    50   Input ~ 0
+Text GLabel 3900 2600 0    50   Input ~ 0
 SCL-
 $Comp
 L power:+3V3 #PWR011
 U 1 1 603EEDDE
-P 3550 3500
-F 0 "#PWR011" H 3550 3350 50  0001 C CNN
-F 1 "+3V3" H 3565 3673 50  0000 C CNN
-F 2 "" H 3550 3500 50  0001 C CNN
-F 3 "" H 3550 3500 50  0001 C CNN
-	1    3550 3500
+P 3450 2800
+F 0 "#PWR011" H 3450 2650 50  0001 C CNN
+F 1 "+3V3" H 3465 2973 50  0000 C CNN
+F 2 "" H 3450 2800 50  0001 C CNN
+F 3 "" H 3450 2800 50  0001 C CNN
+	1    3450 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3550 3700 3550 3800
+	3450 3000 3450 3100
 $Comp
 L power:GND #PWR012
 U 1 1 603FB6E6
-P 3550 3800
-F 0 "#PWR012" H 3550 3550 50  0001 C CNN
-F 1 "GND" H 3555 3627 50  0000 C CNN
-F 2 "" H 3550 3800 50  0001 C CNN
-F 3 "" H 3550 3800 50  0001 C CNN
-	1    3550 3800
+P 3450 3100
+F 0 "#PWR012" H 3450 2850 50  0001 C CNN
+F 1 "GND" H 3455 2927 50  0000 C CNN
+F 2 "" H 3450 3100 50  0001 C CNN
+F 3 "" H 3450 3100 50  0001 C CNN
+	1    3450 3100
 	1    0    0    -1  
 $EndComp
 $Comp
 L SM07B-SRSS-TB:SM07B-SRSS-TBLFSN J1
 U 1 1 604B8AD4
-P 4150 3900
-F 0 "J1" H 3422 3054 50  0000 R CNN
-F 1 "SM07B-SRSS-TBLFSN" H 3422 3145 50  0000 R CNN
-F 2 "SM07B-SRSS-TB:JST-SM07B-SRSS-TBLFSN-0" H 4150 4400 50  0001 L CNN
-F 3 "https://upverter.com/datasheet/f612ce3c50b961849b9e0dc8dd6557d8d4d5c3c1.pdf" H 4150 4500 50  0001 L CNN
-F 4 "Tin" H 4150 4600 50  0001 L CNN "Contact Finish"
-F 5 "7" H 4150 4700 50  0001 L CNN "Number of Positions"
-F 6 "1.00mm" H 4150 4800 50  0001 L CNN "Pitch"
-F 7 "Conn" H 4150 4900 50  0001 L CNN "category"
-F 8 "" H 4150 5000 50  0001 L CNN "description"
-F 9 "7 Positions Header, Shrouded Connector 0.039in\\ (1.00mm) Surface Mount, Right Angle Tin" H 4150 5100 50  0001 L CNN "digikey description"
-F 10 "455-1807-1-ND" H 4150 5200 50  0001 L CNN "digikey part number"
-F 11 "yes" H 4150 5300 50  0001 L CNN "is connector"
-F 12 "yes" H 4150 5400 50  0001 L CNN "is male"
-F 13 "yes" H 4150 5500 50  0001 L CNN "lead free"
-F 14 "7c23b0edf920e71a" H 4150 5600 50  0001 L CNN "library id"
-F 15 "JST" H 4150 5700 50  0001 L CNN "manufacturer"
-F 16 "HDR7" H 4150 5800 50  0001 L CNN "package"
-F 17 "yes" H 4150 5900 50  0001 L CNN "rohs"
-F 18 "+85°C" H 4150 6000 50  0001 L CNN "temperature range high"
-F 19 "-25°C" H 4150 6100 50  0001 L CNN "temperature range low"
-	1    4150 3900
+P 4050 3200
+F 0 "J1" H 3322 2354 50  0000 R CNN
+F 1 "SM07B-SRSS-TBLFSN" H 3322 2445 50  0000 R CNN
+F 2 "SM07B-SRSS-TB:JST-SM07B-SRSS-TBLFSN-0" H 4050 3700 50  0001 L CNN
+F 3 "https://upverter.com/datasheet/f612ce3c50b961849b9e0dc8dd6557d8d4d5c3c1.pdf" H 4050 3800 50  0001 L CNN
+F 4 "Tin" H 4050 3900 50  0001 L CNN "Contact Finish"
+F 5 "7" H 4050 4000 50  0001 L CNN "Number of Positions"
+F 6 "1.00mm" H 4050 4100 50  0001 L CNN "Pitch"
+F 7 "Conn" H 4050 4200 50  0001 L CNN "category"
+F 8 "" H 4050 4300 50  0001 L CNN "description"
+F 9 "7 Positions Header, Shrouded Connector 0.039in\\ (1.00mm) Surface Mount, Right Angle Tin" H 4050 4400 50  0001 L CNN "digikey description"
+F 10 "455-1807-1-ND" H 4050 4500 50  0001 L CNN "digikey part number"
+F 11 "yes" H 4050 4600 50  0001 L CNN "is connector"
+F 12 "yes" H 4050 4700 50  0001 L CNN "is male"
+F 13 "yes" H 4050 4800 50  0001 L CNN "lead free"
+F 14 "7c23b0edf920e71a" H 4050 4900 50  0001 L CNN "library id"
+F 15 "JST" H 4050 5000 50  0001 L CNN "manufacturer"
+F 16 "HDR7" H 4050 5100 50  0001 L CNN "package"
+F 17 "yes" H 4050 5200 50  0001 L CNN "rohs"
+F 18 "+85°C" H 4050 5300 50  0001 L CNN "temperature range high"
+F 19 "-25°C" H 4050 5400 50  0001 L CNN "temperature range low"
+	1    4050 3200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4000 2700 4250 2700
+	3900 2000 4150 2000
 Wire Wire Line
-	4000 2900 4250 2900
+	3900 2200 4150 2200
 Wire Wire Line
-	4000 3100 4250 3100
+	3900 2400 4150 2400
 Wire Wire Line
-	4000 3300 4250 3300
+	3900 2600 4150 2600
 Wire Wire Line
-	3550 3500 4250 3500
+	3450 2800 4150 2800
 Wire Wire Line
-	3550 3700 4250 3700
+	3450 3000 4150 3000
 Wire Wire Line
-	4000 3900 4250 3900
+	3900 3200 4150 3200
 $Comp
 L SM07B-SRSS-TB:SM07B-SRSS-TBLFSN J0
 U 1 1 6055ED0B
