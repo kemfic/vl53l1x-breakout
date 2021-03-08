@@ -3,4 +3,5 @@
   (lib (name VL53L1X)(type KiCad)(uri ${KIPRJMOD}/lib/VL53L1CX.pretty)(options "")(descr ""))
   (lib (name LTC4316)(type KiCad)(uri ${KIPRJMOD}/lib/LTC4316.pretty)(options "")(descr ""))
   (lib (name SM07B-SRSS-TB)(type KiCad)(uri ${KIPRJMOD}/lib/SM07B-SRSS-TB.pretty)(options "")(descr ""))
+  (lib (name LTC4316IDDPBF)(type KiCad)(uri ${KIPRJMOD}/lib/LTC4316IDDPBF.pretty)(options "")(descr ""))
 )

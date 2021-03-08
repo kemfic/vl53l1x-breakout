@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/kemfic/projects/vl53l1x-breakout/vl53l1x-breakout.sch)
-    (date "Sat 06 Mar 2021 06:27:08 PM PST")
+    (date "Sun 07 Mar 2021 08:30:09 PM PST")
     (tool "Eeschema 5.1.5+dfsg1-2build2")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -148,7 +148,7 @@
       (tstamp 60504316))
     (comp (ref U3)
       (value LTC4316IMSPBF)
-      (footprint LTC4316:MSOP-10_MS)
+      (footprint LTC4316IDDPBF:DFN-10_DD)
       (fields
         (field (name MANUFACTURER_PART_NUMBER) ltc4316ims#pbf)
         (field (name VENDOR) "Linear Technology"))
