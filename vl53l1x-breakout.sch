@@ -42,108 +42,6 @@ F 3 "" H 6850 1750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Ferrite_Bead_Small FB1
-U 1 1 603C74BB
-P 2650 1800
-F 0 "FB1" V 2887 1800 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" V 2796 1800 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" V 2580 1800 50  0001 C CNN
-F 3 "~" H 2650 1800 50  0001 C CNN
-	1    2650 1800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR08
-U 1 1 603CE5DB
-P 3050 2250
-F 0 "#PWR08" H 3050 2000 50  0001 C CNN
-F 1 "GND" H 3055 2077 50  0000 C CNN
-F 2 "" H 3050 2250 50  0001 C CNN
-F 3 "" H 3050 2250 50  0001 C CNN
-	1    3050 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C2
-U 1 1 603D1860
-P 3050 2050
-F 0 "C2" H 2958 2004 50  0000 R CNN
-F 1 "0.1uF" H 2958 2095 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 3050 2050 50  0001 C CNN
-F 3 "~" H 3050 2050 50  0001 C CNN
-	1    3050 2050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3050 2150 3050 2200
-$Comp
-L power:VCC #PWR09
-U 1 1 603D3262
-P 3300 1800
-F 0 "#PWR09" H 3300 1650 50  0001 C CNN
-F 1 "VCC" H 3317 1973 50  0000 C CNN
-F 2 "" H 3300 1800 50  0001 C CNN
-F 3 "" H 3300 1800 50  0001 C CNN
-	1    3300 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 1800 3050 1800
-Wire Wire Line
-	3050 1800 3050 1950
-Connection ~ 3050 1800
-Wire Wire Line
-	3050 1800 3300 1800
-$Comp
-L power:GND #PWR01
-U 1 1 603E7A4C
-P 1550 2900
-F 0 "#PWR01" H 1550 2650 50  0001 C CNN
-F 1 "GND" H 1555 2727 50  0000 C CNN
-F 2 "" H 1550 2900 50  0001 C CNN
-F 3 "" H 1550 2900 50  0001 C CNN
-	1    1550 2900
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C1
-U 1 1 603EA97A
-P 1550 2650
-F 0 "C1" H 1642 2696 50  0000 L CNN
-F 1 "10uF" H 1642 2605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 1550 2650 50  0001 C CNN
-F 3 "~" H 1550 2650 50  0001 C CNN
-	1    1550 2650
-	-1   0    0    -1  
-$EndComp
-Connection ~ 3050 2200
-Wire Wire Line
-	3050 2200 3050 2250
-Text GLabel 1500 1000 2    50   Input ~ 0
-SCL-
-Text GLabel 1500 1200 2    50   Input ~ 0
-SCL+
-Text GLabel 1500 1400 2    50   Input ~ 0
-SDA+
-Text GLabel 1500 1600 2    50   Input ~ 0
-SDA-
-Wire Wire Line
-	2000 1800 2000 1600
-Connection ~ 2000 1800
-Wire Wire Line
-	2000 1800 2550 1800
-$Comp
-L power:+3V3 #PWR02
-U 1 1 603FFEB9
-P 2000 1600
-F 0 "#PWR02" H 2000 1450 50  0001 C CNN
-F 1 "+3V3" H 2015 1773 50  0000 C CNN
-F 2 "" H 2000 1600 50  0001 C CNN
-F 3 "" H 2000 1600 50  0001 C CNN
-	1    2000 1600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR010
 U 1 1 60401C96
 P 4550 6700
@@ -795,8 +693,6 @@ Wire Wire Line
 	8850 2450 9600 2450
 Connection ~ 9600 1850
 Wire Wire Line
-	1550 2750 1550 2900
-Wire Wire Line
 	9600 2450 9600 2350
 Wire Wire Line
 	9600 2150 9600 1850
@@ -811,130 +707,8 @@ F 3 "~" H 9600 2250 50  0001 C CNN
 	1    9600 2250
 	1    0    0    -1  
 $EndComp
-Text GLabel 3900 3200 0    50   Input ~ 0
-shld
-Text GLabel 3900 2400 0    50   Input ~ 0
-SDA+
-Text GLabel 3900 2600 0    50   Input ~ 0
-SDA-
-Text GLabel 3900 2200 0    50   Input ~ 0
-SCL+
-Text GLabel 3900 2000 0    50   Input ~ 0
-SCL-
-$Comp
-L power:+3V3 #PWR011
-U 1 1 603EEDDE
-P 3450 2800
-F 0 "#PWR011" H 3450 2650 50  0001 C CNN
-F 1 "+3V3" H 3465 2973 50  0000 C CNN
-F 2 "" H 3450 2800 50  0001 C CNN
-F 3 "" H 3450 2800 50  0001 C CNN
-	1    3450 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3450 3000 3450 3100
-$Comp
-L power:GND #PWR012
-U 1 1 603FB6E6
-P 3450 3100
-F 0 "#PWR012" H 3450 2850 50  0001 C CNN
-F 1 "GND" H 3455 2927 50  0000 C CNN
-F 2 "" H 3450 3100 50  0001 C CNN
-F 3 "" H 3450 3100 50  0001 C CNN
-	1    3450 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L SM07B-SRSS-TB:SM07B-SRSS-TBLFSN J1
-U 1 1 604B8AD4
-P 4050 3200
-F 0 "J1" H 3322 2354 50  0000 R CNN
-F 1 "SM07B-SRSS-TBLFSN" H 3322 2445 50  0000 R CNN
-F 2 "SM07B-SRSS-TB:JST-SM07B-SRSS-TBLFSN-0" H 4050 3700 50  0001 L CNN
-F 3 "https://upverter.com/datasheet/f612ce3c50b961849b9e0dc8dd6557d8d4d5c3c1.pdf" H 4050 3800 50  0001 L CNN
-F 4 "Tin" H 4050 3900 50  0001 L CNN "Contact Finish"
-F 5 "7" H 4050 4000 50  0001 L CNN "Number of Positions"
-F 6 "1.00mm" H 4050 4100 50  0001 L CNN "Pitch"
-F 7 "Conn" H 4050 4200 50  0001 L CNN "category"
-F 8 "" H 4050 4300 50  0001 L CNN "description"
-F 9 "7 Positions Header, Shrouded Connector 0.039in\\ (1.00mm) Surface Mount, Right Angle Tin" H 4050 4400 50  0001 L CNN "digikey description"
-F 10 "455-1807-1-ND" H 4050 4500 50  0001 L CNN "digikey part number"
-F 11 "yes" H 4050 4600 50  0001 L CNN "is connector"
-F 12 "yes" H 4050 4700 50  0001 L CNN "is male"
-F 13 "yes" H 4050 4800 50  0001 L CNN "lead free"
-F 14 "7c23b0edf920e71a" H 4050 4900 50  0001 L CNN "library id"
-F 15 "JST" H 4050 5000 50  0001 L CNN "manufacturer"
-F 16 "HDR7" H 4050 5100 50  0001 L CNN "package"
-F 17 "yes" H 4050 5200 50  0001 L CNN "rohs"
-F 18 "+85°C" H 4050 5300 50  0001 L CNN "temperature range high"
-F 19 "-25°C" H 4050 5400 50  0001 L CNN "temperature range low"
-	1    4050 3200
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3900 2000 4150 2000
-Wire Wire Line
-	3900 2200 4150 2200
-Wire Wire Line
-	3900 2400 4150 2400
-Wire Wire Line
-	3900 2600 4150 2600
-Wire Wire Line
-	3450 2800 4150 2800
-Wire Wire Line
-	3450 3000 4150 3000
-Wire Wire Line
-	3900 3200 4150 3200
-$Comp
-L SM07B-SRSS-TB:SM07B-SRSS-TBLFSN J0
-U 1 1 6055ED0B
-P 1400 1000
-F 0 "J0" H 1008 1365 50  0000 C CNN
-F 1 "SM07B-SRSS-TBLFSN" H 1008 1274 50  0000 C CNN
-F 2 "SM07B-SRSS-TB:JST-SM07B-SRSS-TBLFSN-0" H 1400 1500 50  0001 L CNN
-F 3 "https://upverter.com/datasheet/f612ce3c50b961849b9e0dc8dd6557d8d4d5c3c1.pdf" H 1400 1600 50  0001 L CNN
-F 4 "Tin" H 1400 1700 50  0001 L CNN "Contact Finish"
-F 5 "7" H 1400 1800 50  0001 L CNN "Number of Positions"
-F 6 "1.00mm" H 1400 1900 50  0001 L CNN "Pitch"
-F 7 "Conn" H 1400 2000 50  0001 L CNN "category"
-F 8 "" H 1400 2100 50  0001 L CNN "description"
-F 9 "7 Positions Header, Shrouded Connector 0.039in\\ (1.00mm) Surface Mount, Right Angle Tin" H 1400 2200 50  0001 L CNN "digikey description"
-F 10 "455-1807-1-ND" H 1400 2300 50  0001 L CNN "digikey part number"
-F 11 "yes" H 1400 2400 50  0001 L CNN "is connector"
-F 12 "yes" H 1400 2500 50  0001 L CNN "is male"
-F 13 "yes" H 1400 2600 50  0001 L CNN "lead free"
-F 14 "7c23b0edf920e71a" H 1400 2700 50  0001 L CNN "library id"
-F 15 "JST" H 1400 2800 50  0001 L CNN "manufacturer"
-F 16 "HDR7" H 1400 2900 50  0001 L CNN "package"
-F 17 "yes" H 1400 3000 50  0001 L CNN "rohs"
-F 18 "+85°C" H 1400 3100 50  0001 L CNN "temperature range high"
-F 19 "-25°C" H 1400 3200 50  0001 L CNN "temperature range low"
-	1    1400 1000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1550 2200 1300 2200
-Wire Wire Line
-	2300 2200 2300 2000
-Wire Wire Line
-	2300 2000 1300 2000
-Wire Wire Line
-	1300 1800 2000 1800
-Wire Wire Line
-	2300 2200 3050 2200
-Wire Wire Line
-	1500 1600 1300 1600
-Wire Wire Line
-	1500 1400 1300 1400
-Wire Wire Line
-	1500 1200 1300 1200
-Wire Wire Line
-	1500 1000 1300 1000
 Wire Wire Line
 	6700 2150 6850 2150
-Wire Wire Line
-	1550 2200 1550 2550
 $Comp
 L power:GND #PWR0101
 U 1 1 61E1FD13
@@ -1048,4 +822,230 @@ Wire Wire Line
 Connection ~ 4550 6600
 Text GLabel 1550 2200 2    50   Input ~ 0
 shld
+Wire Wire Line
+	1550 2200 1550 2550
+Wire Wire Line
+	1500 1000 1300 1000
+Wire Wire Line
+	1500 1200 1300 1200
+Wire Wire Line
+	1500 1400 1300 1400
+Wire Wire Line
+	1500 1600 1300 1600
+Wire Wire Line
+	2300 2200 3050 2200
+Wire Wire Line
+	1300 1800 2000 1800
+Wire Wire Line
+	2300 2000 1300 2000
+Wire Wire Line
+	2300 2200 2300 2000
+Wire Wire Line
+	1550 2200 1300 2200
+Wire Wire Line
+	1550 2750 1550 2900
+$Comp
+L power:+3V3 #PWR02
+U 1 1 603FFEB9
+P 2000 1600
+F 0 "#PWR02" H 2000 1450 50  0001 C CNN
+F 1 "+3V3" H 2015 1773 50  0000 C CNN
+F 2 "" H 2000 1600 50  0001 C CNN
+F 3 "" H 2000 1600 50  0001 C CNN
+	1    2000 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1800 2550 1800
+Connection ~ 2000 1800
+Wire Wire Line
+	2000 1800 2000 1600
+Text GLabel 1500 1600 2    50   Input ~ 0
+SDA-
+Text GLabel 1500 1400 2    50   Input ~ 0
+SDA+
+Text GLabel 1500 1200 2    50   Input ~ 0
+SCL+
+Text GLabel 1500 1000 2    50   Input ~ 0
+SCL-
+Wire Wire Line
+	3050 2200 3050 2250
+Connection ~ 3050 2200
+$Comp
+L Device:C_Small C1
+U 1 1 603EA97A
+P 1550 2650
+F 0 "C1" H 1642 2696 50  0000 L CNN
+F 1 "10uF" H 1642 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 1550 2650 50  0001 C CNN
+F 3 "~" H 1550 2650 50  0001 C CNN
+	1    1550 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 603E7A4C
+P 1550 2900
+F 0 "#PWR01" H 1550 2650 50  0001 C CNN
+F 1 "GND" H 1555 2727 50  0000 C CNN
+F 2 "" H 1550 2900 50  0001 C CNN
+F 3 "" H 1550 2900 50  0001 C CNN
+	1    1550 2900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1800 3300 1800
+Connection ~ 3050 1800
+Wire Wire Line
+	3050 1800 3050 1950
+Wire Wire Line
+	2750 1800 3050 1800
+$Comp
+L power:VCC #PWR09
+U 1 1 603D3262
+P 3300 1800
+F 0 "#PWR09" H 3300 1650 50  0001 C CNN
+F 1 "VCC" H 3317 1973 50  0000 C CNN
+F 2 "" H 3300 1800 50  0001 C CNN
+F 3 "" H 3300 1800 50  0001 C CNN
+	1    3300 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2150 3050 2200
+$Comp
+L Device:C_Small C2
+U 1 1 603D1860
+P 3050 2050
+F 0 "C2" H 2958 2004 50  0000 R CNN
+F 1 "0.1uF" H 2958 2095 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 3050 2050 50  0001 C CNN
+F 3 "~" H 3050 2050 50  0001 C CNN
+	1    3050 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 603CE5DB
+P 3050 2250
+F 0 "#PWR08" H 3050 2000 50  0001 C CNN
+F 1 "GND" H 3055 2077 50  0000 C CNN
+F 2 "" H 3050 2250 50  0001 C CNN
+F 3 "" H 3050 2250 50  0001 C CNN
+	1    3050 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 603C74BB
+P 2650 1800
+F 0 "FB1" V 2887 1800 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 2796 1800 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 2580 1800 50  0001 C CNN
+F 3 "~" H 2650 1800 50  0001 C CNN
+	1    2650 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SM07B-SRSS-TB:SM07B-SRSS-TBLFSN J0
+U 1 1 604B8AD4
+P 4050 3200
+F 0 "J0" H 3322 2354 50  0000 R CNN
+F 1 "SM07B-SRSS-TBLFSN" H 3322 2445 50  0000 R CNN
+F 2 "SM07B-SRSS-TB:JST-SM07B-SRSS-TBLFSN-0" H 4050 3700 50  0001 L CNN
+F 3 "https://upverter.com/datasheet/f612ce3c50b961849b9e0dc8dd6557d8d4d5c3c1.pdf" H 4050 3800 50  0001 L CNN
+F 4 "Tin" H 4050 3900 50  0001 L CNN "Contact Finish"
+F 5 "7" H 4050 4000 50  0001 L CNN "Number of Positions"
+F 6 "1.00mm" H 4050 4100 50  0001 L CNN "Pitch"
+F 7 "Conn" H 4050 4200 50  0001 L CNN "category"
+F 8 "" H 4050 4300 50  0001 L CNN "description"
+F 9 "7 Positions Header, Shrouded Connector 0.039in\\ (1.00mm) Surface Mount, Right Angle Tin" H 4050 4400 50  0001 L CNN "digikey description"
+F 10 "455-1807-1-ND" H 4050 4500 50  0001 L CNN "digikey part number"
+F 11 "yes" H 4050 4600 50  0001 L CNN "is connector"
+F 12 "yes" H 4050 4700 50  0001 L CNN "is male"
+F 13 "yes" H 4050 4800 50  0001 L CNN "lead free"
+F 14 "7c23b0edf920e71a" H 4050 4900 50  0001 L CNN "library id"
+F 15 "JST" H 4050 5000 50  0001 L CNN "manufacturer"
+F 16 "HDR7" H 4050 5100 50  0001 L CNN "package"
+F 17 "yes" H 4050 5200 50  0001 L CNN "rohs"
+F 18 "+85°C" H 4050 5300 50  0001 L CNN "temperature range high"
+F 19 "-25°C" H 4050 5400 50  0001 L CNN "temperature range low"
+	1    4050 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L SM07B-SRSS-TB:SM07B-SRSS-TBLFSN J1
+U 1 1 6055ED0B
+P 1400 1000
+F 0 "J1" H 1008 1365 50  0000 C CNN
+F 1 "SM07B-SRSS-TBLFSN" H 1008 1274 50  0000 C CNN
+F 2 "SM07B-SRSS-TB:JST-SM07B-SRSS-TBLFSN-0" H 1400 1500 50  0001 L CNN
+F 3 "https://upverter.com/datasheet/f612ce3c50b961849b9e0dc8dd6557d8d4d5c3c1.pdf" H 1400 1600 50  0001 L CNN
+F 4 "Tin" H 1400 1700 50  0001 L CNN "Contact Finish"
+F 5 "7" H 1400 1800 50  0001 L CNN "Number of Positions"
+F 6 "1.00mm" H 1400 1900 50  0001 L CNN "Pitch"
+F 7 "Conn" H 1400 2000 50  0001 L CNN "category"
+F 8 "" H 1400 2100 50  0001 L CNN "description"
+F 9 "7 Positions Header, Shrouded Connector 0.039in\\ (1.00mm) Surface Mount, Right Angle Tin" H 1400 2200 50  0001 L CNN "digikey description"
+F 10 "455-1807-1-ND" H 1400 2300 50  0001 L CNN "digikey part number"
+F 11 "yes" H 1400 2400 50  0001 L CNN "is connector"
+F 12 "yes" H 1400 2500 50  0001 L CNN "is male"
+F 13 "yes" H 1400 2600 50  0001 L CNN "lead free"
+F 14 "7c23b0edf920e71a" H 1400 2700 50  0001 L CNN "library id"
+F 15 "JST" H 1400 2800 50  0001 L CNN "manufacturer"
+F 16 "HDR7" H 1400 2900 50  0001 L CNN "package"
+F 17 "yes" H 1400 3000 50  0001 L CNN "rohs"
+F 18 "+85°C" H 1400 3100 50  0001 L CNN "temperature range high"
+F 19 "-25°C" H 1400 3200 50  0001 L CNN "temperature range low"
+	1    1400 1000
+	1    0    0    -1  
+$EndComp
+Text GLabel 3900 2000 0    50   Input ~ 0
+shld
+Text GLabel 3900 2800 0    50   Input ~ 0
+SDA+
+Text GLabel 3900 2600 0    50   Input ~ 0
+SDA-
+Text GLabel 3900 3000 0    50   Input ~ 0
+SCL+
+Text GLabel 3900 3200 0    50   Input ~ 0
+SCL-
+Wire Wire Line
+	3900 3200 4150 3200
+Wire Wire Line
+	3900 3000 4150 3000
+Wire Wire Line
+	3900 2800 4150 2800
+Wire Wire Line
+	3900 2600 4150 2600
+Wire Wire Line
+	3900 2000 4150 2000
+Wire Wire Line
+	3450 2200 3450 2300
+$Comp
+L power:GND #PWR012
+U 1 1 603FB6E6
+P 3450 2300
+F 0 "#PWR012" H 3450 2050 50  0001 C CNN
+F 1 "GND" H 3455 2127 50  0000 C CNN
+F 2 "" H 3450 2300 50  0001 C CNN
+F 3 "" H 3450 2300 50  0001 C CNN
+	1    3450 2300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2400 3750 2400
+$Comp
+L power:+3V3 #PWR011
+U 1 1 603EEDDE
+P 3750 2400
+F 0 "#PWR011" H 3750 2250 50  0001 C CNN
+F 1 "+3V3" H 3765 2573 50  0000 C CNN
+F 2 "" H 3750 2400 50  0001 C CNN
+F 3 "" H 3750 2400 50  0001 C CNN
+	1    3750 2400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2200 4150 2200
 $EndSCHEMATC
